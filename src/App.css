@@ -1,0 +1,271 @@
+.app-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Custom Editor Styles */
+.custom-editor-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.custom-editor-container [contenteditable] {
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.custom-editor-container [contenteditable]:empty:before {
+  content: attr(placeholder);
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.custom-editor-container [contenteditable] h1,
+.custom-editor-container [contenteditable] h2,
+.custom-editor-container [contenteditable] h3,
+.custom-editor-container [contenteditable] h4,
+.custom-editor-container [contenteditable] h5,
+.custom-editor-container [contenteditable] h6 {
+  font-weight: 300;
+  color: #111827;
+  margin: 2rem 0 1rem 0;
+}
+
+.custom-editor-container [contenteditable] h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.custom-editor-container [contenteditable] h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.custom-editor-container [contenteditable] h3 {
+  font-size: 1.75rem;
+  line-height: 1.4;
+}
+
+.custom-editor-container [contenteditable] h4 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.custom-editor-container [contenteditable] p {
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.custom-editor-container [contenteditable] blockquote {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #6b7280;
+  font-size: 1.125rem;
+}
+
+.custom-editor-container [contenteditable] code {
+  background-color: #f3f4f6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: #1f2937;
+  font-family: 'Courier New', monospace;
+}
+
+.custom-editor-container [contenteditable] pre {
+  background-color: #1f2937;
+  color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+  font-family: 'Courier New', monospace;
+}
+
+.custom-editor-container [contenteditable] pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.custom-editor-container [contenteditable] ul,
+.custom-editor-container [contenteditable] ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.custom-editor-container [contenteditable] li {
+  margin-bottom: 0.5rem;
+}
+
+.custom-editor-container [contenteditable] a {
+  color: #1f2937;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.custom-editor-container [contenteditable] a:hover {
+  color: #374151;
+}
+
+.custom-editor-container [contenteditable] img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+/* Content renderer styles */
+.content-renderer {
+  max-width: none;
+}
+
+.content-renderer h1,
+.content-renderer h2,
+.content-renderer h3,
+.content-renderer h4,
+.content-renderer h5,
+.content-renderer h6 {
+  font-weight: 300;
+  color: #111827;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content-renderer h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.content-renderer h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.content-renderer h3 {
+  font-size: 1.75rem;
+  line-height: 1.4;
+}
+
+.content-renderer h4 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.content-renderer h5 {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.content-renderer p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.content-renderer blockquote {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #6b7280;
+}
+
+.content-renderer code {
+  background-color: #f3f4f6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: #1f2937;
+}
+
+.content-renderer pre {
+  background-color: #1f2937;
+  color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.content-renderer pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.content-renderer ul,
+.content-renderer ol {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.content-renderer li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.content-renderer a {
+  color: #1f2937;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.content-renderer a:hover {
+  color: #374151;
+}
+
+.content-renderer img {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+}
+
+.content-renderer table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.content-renderer table th,
+.content-renderer table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+}
+
+.content-renderer table th {
+  background-color: #f9fafb;
+  font-weight: 500;
+}
+
+.content-renderer iframe {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+/* Tag tree styles */
+.tag-tree {
+  background-color: #ffffff;
+}
+
+/* Smooth scrollbar for tag dropdown */
+.tag-dropdown-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tag-dropdown-scroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.tag-dropdown-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.tag-dropdown-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
